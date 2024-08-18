@@ -4,11 +4,12 @@ import FormField from "./FormField";
 
 function FormField({
     label,
-    type,
     name,
-    value,
     onChange,
-    required
+    placeholder,
+    required,
+    type = "input",
+    value,
 }) {
     return (
         <div className="FormField">
@@ -16,12 +17,13 @@ function FormField({
                 {label}
             </label>}
             <input
-                type = {type}
-                name = {name}
                 id = {name}
-                value = {value}
+                name = {name}
                 onChange = {onChange}
+                placeholder = {placeholder}
                 required = {required}
+                type = {type}
+                value = {value}
             />
       </div>
     );

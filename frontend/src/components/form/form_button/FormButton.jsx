@@ -2,9 +2,23 @@ import React from 'react';
 import FormButton from './FormButton';
 
 
-function FormButton({ text, onClick }) {
+function FormButton({
+  ariaLabel,
+  disabled,
+  form,
+  onClick,
+  text,
+  type,
+}) {
   return (
-    <button type="button" onClick={onClick}>
+    <button
+      aria-label = {ariaLabel}
+      className = 'FormButton'
+      form = {form}
+      disabled = {disabled}
+      onClick = {onClick}
+      type = {type}
+    >
       {text}
     </button>
   );
