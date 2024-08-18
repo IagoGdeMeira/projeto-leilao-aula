@@ -1,6 +1,13 @@
+:root {
+    --text: #0d155c;
+    --background: #7381d1;
+}
+
 .footer {
-    border: 1px solid #aaa9a9;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #dfdfdf;
+    background-color: var(--background);
+    border: solid var(--text);
+    border-radius: 10px 10px 0 0;
+    border-width: 2px 2px 0 2px;
+    color: var(--text);
+    padding: 5px 10px;
 }

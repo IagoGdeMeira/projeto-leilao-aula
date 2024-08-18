@@ -1,0 +1,5 @@
+.Layout {
+    flex-grow: 1;
+    max-height: fit-content;
+    min-height: 100%;
+}

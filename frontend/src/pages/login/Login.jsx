@@ -1,12 +1,14 @@
 import React from "react";
 import "./Login.css";
 
+
 const Login = () =>{
 
     return(
-        <div>
+        <main>
             <h1>Página de Login</h1>
-        </div>
+        </main>
     );
 }
+
 export default Login;
