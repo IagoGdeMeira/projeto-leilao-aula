@@ -3,11 +3,11 @@ import "./Header.css";
 
 
 const Header = () =>{
-
     return(
-        <div className="header">
-            <h1>Menu</h1>
-        </div>
+        <header>
+            <h1>Menu Principal</h1>
+        </header>
     );
 }
+
 export default Header;

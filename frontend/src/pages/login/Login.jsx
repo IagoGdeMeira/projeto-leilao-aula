@@ -1,13 +1,13 @@
 import React from "react";
 import "./Login.css";
+import LoginForm from "../../components/form/LoginForm";
 
 
 const Login = () =>{
-
     return(
-        <main>
-            <h1>Página de Login</h1>
-        </main>
+        <>
+            <LoginForm/>
+        </>
     );
 }
 

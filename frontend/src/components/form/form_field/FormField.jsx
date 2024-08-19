@@ -1,5 +1,5 @@
 import React from "react";
-import FormField from "./FormField";
+import PropTypes from 'prop-types';
 
 
 function FormField({
@@ -8,8 +8,8 @@ function FormField({
     onChange,
     placeholder,
     required,
-    type = "input",
-    value,
+    type,
+    value
 }) {
     return (
         <div className="FormField">
@@ -28,5 +28,23 @@ function FormField({
       </div>
     );
 }
-  
-  export default FormField;
+
+FormField.propTypes = {
+    label: PropTypes.string,
+    name: PropTypes.string.isRequired,
+    onChange: PropTypes.func,
+    placeholder: PropTypes.string,
+    required: PropTypes.bool,
+    type: PropTypes.string,
+    value: PropTypes.any
+};
+
+FormField.defaultProps = {
+    label: '',
+    onChange: () => {},
+    placeholder: '',
+    required: true,
+    type: 'text'
+};
+
+export default FormField;

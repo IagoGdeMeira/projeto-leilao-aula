@@ -1,20 +1,34 @@
 import React from 'react';
-import Form from './Form';
+import PropTypes from 'prop-types';
 
 
 function Form({
     children,
     className,
-    form
+    form,
+    onSubmit
 }) {
     return (
         <form
             className = {className}
             name = {form}
+            onSubmit = {onSubmit}
         >
             {children}
         </form>
     );
 }
+
+Form.propTypes = {
+    children: PropTypes.node.isRequired,
+    className: PropTypes.string,
+    form: PropTypes.string.isRequired,
+    onSubmit: PropTypes.func
+};
+
+Form.defaultProps = {
+    className: '',
+    onSubmit: () => {}
+};
 
 export default Form;

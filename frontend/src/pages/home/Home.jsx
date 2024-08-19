@@ -5,9 +5,9 @@ import "./Home.css";
 const Home = () =>{
 
 return(
-    <main>
+    <div>
         <h1>Página Inicial</h1>
-    </main>
+    </div>
 );
 }
 export default Home;

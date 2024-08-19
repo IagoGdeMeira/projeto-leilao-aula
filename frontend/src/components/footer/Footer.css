@@ -1,13 +1,8 @@
-:root {
-    --text: #0d155c;
-    --background: #7381d1;
+footer {
+    height: fit-content;
 }
 
-.footer {
-    background-color: var(--background);
-    border: solid var(--text);
-    border-radius: 10px 10px 0 0;
-    border-width: 2px 2px 0 2px;
-    color: var(--text);
-    padding: 5px 10px;
+
+p {
+    font-weight: bolder;
 }

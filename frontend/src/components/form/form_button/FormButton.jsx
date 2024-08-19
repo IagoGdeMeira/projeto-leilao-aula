@@ -1,9 +1,10 @@
 import React from 'react';
-import FormButton from './FormButton';
+import PropTypes from 'prop-types';
 
 
 function FormButton({
   ariaLabel,
+  className,
   disabled,
   form,
   onClick,
@@ -13,9 +14,9 @@ function FormButton({
   return (
     <button
       aria-label = {ariaLabel}
-      className = 'FormButton'
-      form = {form}
+      className = {className}
       disabled = {disabled}
+      form = {form}
       onClick = {onClick}
       type = {type}
     >
@@ -23,5 +24,23 @@ function FormButton({
     </button>
   );
 }
+
+FormButton.propTypes = {
+  ariaLabel: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  disabled: PropTypes.bool,
+  form: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
+  text: PropTypes.string,
+  type: PropTypes.string,
+};
+
+FormButton.defaultProps = {
+  className: '',
+  disabled: false,
+  onClick: () => {},
+  text: '',
+  type: "button",
+};
 
 export default FormButton;

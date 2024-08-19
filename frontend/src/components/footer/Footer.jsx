@@ -4,9 +4,9 @@ import "./Footer.css";
 
 const Footer = () => {
     return(
-        <div className="footer">
+        <footer>
             <p>&copy;2024</p>
-        </div>
+        </footer>
     );
 }
 
