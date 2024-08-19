@@ -14,8 +14,8 @@ function App() {
     <Layout>
       <BrowserRouter>
         <Routes>
-            <Route path='/' Component={Home}/>
-            <Route path='/login' Component={Login} />
+            <Route path='/' element={<Home/>}/>
+            <Route path='/login' element={<Login/>} />
         </Routes>
       </BrowserRouter>
     </Layout>

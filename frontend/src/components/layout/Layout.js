@@ -3,7 +3,11 @@ import './Layout.css';
 
 
 const Layout = ({ children }) => {
-    return ( <div className='Layout'></div> );
+    return (
+        <main>
+            {children}
+        </main>
+    );
 };
 
 export default Layout;

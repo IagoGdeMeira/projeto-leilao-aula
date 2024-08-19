@@ -3,11 +3,11 @@ import "./Home.css";
 
 
 const Home = () =>{
-
-return(
-    <div>
-        <h1>Página Inicial</h1>
-    </div>
-);
+    return(
+        <>
+            <h1>Página Inicial</h1>
+        </>
+    );
 }
+
 export default Home;
